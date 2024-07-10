@@ -1,0 +1,252 @@
+body{
+    background: wheat;
+}
+.service-content section{
+    height: 700px;
+}
+.service-content .PR .relations{
+    position: absolute;
+    left: 3rem;
+    background-color: rgb(159, 126, 61);
+    padding: 4px 10px;
+    margin: 0;
+    border-radius: 15px ;
+    width: 500px;
+    line-height: 30px;
+    
+}
+.service-content h1, h2, h3,h5,h6{
+    animation: popUp 1s forwards;
+}
+.service-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: popUp 1s forwards;
+    animation-delay: 1s;
+}
+.service-content .PR-image{
+    position: absolute;
+    top: 1rem;
+    left: 47rem;
+    width: 400px;
+    height: 300px;
+    
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(223, 5, 5, 0.2);
+}
+.hover-text{
+    position: absolute;
+    left:59.4rem;
+    top:8rem;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    width: 300px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: center;
+    z-index: 1;
+}
+.hover-effect{
+    display: block;
+}
+.PR-image:hover{
+    opacity:0.9;
+    transition: 0.8s;
+}
+.hover-effect:hover .hover-text{
+    opacity: 1;
+    color: rgb(31, 29, 29);
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+    border-radius: 25px;
+    padding: 2px 4px;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.do-it{
+    color: rgb(45, 42, 42);
+}
+
+
+.do-it h3{
+    font-size: 40px;
+    text-decoration: underline;
+    position: absolute;
+    top: 32rem;
+    font-weight: 800;
+    left: 30rem;
+}
+.do-it h5{
+    position: absolute;
+    top: 35rem;
+    font-size: 28px;
+    font-weight: 800;
+    left: 2rem;
+}
+.do-it .intro-p{
+    width: 700px;
+    position: absolute;
+    top: 39rem;
+    left: 2rem;
+    font-size: 23px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    text-align: justify;
+}
+
+.do-it .Corp{
+    top: 55rem;
+}
+.do-it .corp-p{
+    text-align: justify;
+    position: absolute;
+    top: 59rem;
+    left: 2rem;
+    font-size: 23px;
+    font-weight: 500;
+    width: 500px;
+}
+.do-it .branding{
+    top: 35rem;
+    left: 49rem;
+}
+.do-it .branding-p {
+    text-align: justify;
+    position: absolute;
+    width: 800px;
+    top: 39rem;
+    left: 42rem;
+    width: 600px;
+    font-size: 23px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    
+}
+.do-it .branding-p text{
+   font-weight: bolder;
+}
+.do-it .Crisis{
+    top: 60rem;
+    left: 54rem;
+}
+.do-it .crisis-p{
+    text-align: justify;
+    position: absolute;
+    top: 64rem;
+    right: 2rem;
+    font-size: 23px;
+    font-weight: 500;
+    width: 600px;
+}
+.do-it .crisis-p text{
+    font-weight: bolder;
+ }
+ .do-it .Digital-mkt{
+    top: 75rem;
+    left: 8rem;
+}
+.do-it .digital-p{
+    text-align: justify;
+    font-size: 23px;
+    font-weight: 500;
+    top: 80rem;
+    left: 2rem;
+    position: absolute;
+    width: 550px;
+}
+.do-it .SMM{
+    position: absolute;
+    top: 73rem;
+    left: 53rem;
+    font-weight: 800;
+    
+}
+.do-it .smm-p{
+    text-align: justify;
+    font-size: 23px;
+    font-weight: 500;
+    top: 78rem;
+    right: 2rem;
+    position: absolute;
+    width: 600px;
+}
+.do-it .smm-p details li{
+        list-style: none;
+        padding: 10px 0;
+        margin: 0;
+        background-color: rgba(239, 188, 59, 0.5);
+}
+details li{
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: rgba(239, 188, 59, 0.5); /* Transparent background */
+    
+    
+}
+li::before {
+    content: attr(data-index);
+    display: inline-block;
+    width: 30px; /* Adjust width as needed */
+    text-align: right;
+    margin-right: 10px; /* Space between number and text */
+}
+ 
+@keyframes popUp {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media (max-width:1024px){
+    .how .do-it p{
+        width: 500px;
+    }
+    .how .SMM{
+        position: absolute;
+        
+        top: 76rem;
+        width: 400px;
+        left: 43rem;
+    }
+    .how .smm-p{
+        
+        top: 80rem;
+        left: 43rem;
+    }
+    .how .branding{
+        position: absolute;
+        top: 35rem;
+        left:39rem;
+        width: 350px;
+    }
+    .how .branding-p{
+        
+        width: 600px;
+    }
+    .how .Crisis{
+        
+        top: 62rem;
+    }
+    .how .crisis-p{
+        
+        position: absolute;
+        top: 67rem;
+        left: 43rem;
+    }
+    img{
+        position: absolute;
+        top: 2rem;
+        right: 9rem;
+    }
+}

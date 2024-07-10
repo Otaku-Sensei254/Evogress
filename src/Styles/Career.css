@@ -1,0 +1,217 @@
+.my-sections section{
+    height: 1000px;
+}
+.carousel-inner .team-h1 h2{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    left: 5rem;
+    top:4rem;
+    font-size: 30px;
+    background: rgba(171, 176, 40, 0.1);
+
+
+}
+
+.carousel-inner img{
+    width: 450px;
+    height: 250px;
+}
+.carousel-part{
+    width: auto;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel-inner{
+    display: flex;
+    width: 600%;
+    animation: slide 10s infinite;
+}
+.carousel-inner img{
+    width:24%;
+    transition: transform slide 0.5s ease-in-out;
+}
+.why{
+    background: rgba(41, 41, 38, 0.1);
+    position: absolute;
+    left: 2rem;
+    top: 34rem;
+    line-height: 25px;
+    border-radius: 20px;
+    animation: popUp 2s forwards;
+    
+}
+.why li{
+    list-style: none;
+    text-align: justify;
+    font-size: 20px;
+    padding: 2px 6px;
+    margin: 2px 4px;
+}
+
+.BRANDING{
+    position: absolute;
+    top: 48rem;
+    left: 18rem;
+    
+    width: 700px;
+}
+.BRANDING p{
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+    animation: popUp 2s forwards
+}
+.BRANDING h3{
+    color: black;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.INFLUENCE{
+    position: absolute;
+    top: 69rem;
+    left: 20rem;
+    color: black;
+}
+.INFLUENCE p{
+    width: 700px;
+}
+.INFLUENCE h3{
+    text-decoration: underline;
+}
+.INFLUENCE li{
+    line-height: 25px;
+    word-break:keep-all;
+}
+.email-section{
+    position: absolute;
+    padding: 2px 4px;
+    border-radius: 5px;
+    background:rgba(177, 76, 3, 0.1);
+    top: 99rem;
+    left:15rem;
+    width: 450px;
+    height: 500px;
+}
+.email-section h2{
+    position: absolute;
+    bottom: 0;
+    padding: 2px 4px;
+    margin: 6px 4px;
+   
+}
+
+.email-section input, textarea{
+    margin: 0rem 2rem;
+}
+.email-section form input,::placeholder, .email-section form textarea{
+    display: block;
+    color: white;
+    width: 20rem;
+    background:rgba(216, 116, 29, 0.473);
+    padding: 16px 10px;
+    border:2px rgba(246, 255, 0, 0.237) solid;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    margin-top: 19px;
+    resize: none;
+    overflow: hidden;
+}
+.email-section label{
+    position: absolute;
+    display: flex;
+    margin: px 0px;
+    padding:0rem;
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:normal;
+}
+.btn-email{
+
+    position: absolute;
+    left: 4rem;
+    margin: 2rem 4px;
+    background-color: hwb(125 5% 19% / 0.788);
+}
+.whatsapp_float {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 132rem;
+    right: 40px;
+    background: url('../assets/Images/Whatsapp.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+@media (max-width:1024px){
+    .carousel-inner{
+        width: 200%;
+    }
+}
+
+@keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+            20% {
+                transform: translateX(0%);
+            }
+            25% {
+                transform: translateX(-25%);
+            }
+            45% {
+                transform: translateX(-25%);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            70% {
+                transform: translateX(-50%);
+            }
+            75% {
+                transform: translateX(-75%);
+            }
+            85%{
+                transform:translateX(-85%);
+            }
+            90%{
+                transform: translateX(-90%);
+            }
+            95% {
+                transform: translateX(-95%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }

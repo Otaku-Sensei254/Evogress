@@ -1,0 +1,87 @@
+.menu-class{
+    position: relative;
+    top:3.5rem;
+    left:20rem;
+    display: block;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    overflow:hidden;
+    width:50%;
+    justify-content: center;
+}
+
+.menu-class ul li a:hover{
+        color:gold;
+}
+.tap-me{
+    background-color: black;
+    color:black;
+    width:100%;
+    position:relative;
+    right:25px;
+    top:10px;
+    padding:0.5rem 1rem;
+    border:none;
+    outline:none;
+    border-radius:20px;
+    font-weight:600 ;
+    cursor: pointer;   
+    transition: scale 0.5s ease-in-out;
+}
+.tap-me:hover{
+    color:Gold;
+    scale:1.05;
+}
+.tap-me:active{
+    scale:0.95s;
+}
+
+    
+
+.menu-item{
+    position:absolute;
+    top:15px;
+    right:2rem;
+    width: 600px;
+    height:30rem;
+    display: block;
+    
+}
+.tap-me-menu{
+    color:black;
+    font-size: 15px;
+    background: white;
+    position: absolute;
+    top: -0.5rem;
+    left: 45rem;
+    display: none;
+    z-index: 1;
+}
+@media (max-width:768px){
+    .tap-me-menu{
+        display: block;
+    }
+    .menu-class{
+        position: relative;
+        top:3.5rem;
+        left:25rem;
+        display: block;
+        background:rgba(19, 12, 12, 0.895);
+        backdrop-filter:blur(10px);
+        border-radius:15px;
+        overflow:hidden;
+        width:400px;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        }
+    .menu-class ul a{
+        font-size: 25px;
+        display: block;
+        color: white;
+        line-height: 4rem;
+        text-align:center;
+    }
+}
+
