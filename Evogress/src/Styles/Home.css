@@ -1,0 +1,141 @@
+.home-content{
+    background: url('../assets/Images/team.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    
+}
+.home-content h1{
+    color: white;
+    font-size: 50px;
+    position: fixed;
+    left: 12rem;
+    top: 12rem;
+}
+.home-content p{
+    width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    position: fixed;
+    top: 17rem;
+    left: 8rem;
+    line-height: 1.2;
+}
+.btn{
+    position: absolute;
+    right: 22rem;
+    top: 24rem;
+    
+}
+.btn:hover{
+    border: rgba(15, 194, 15, 0.63);
+    background-color: rgba(15, 194, 15, 0.63);
+}
+
+ 
+.caption h3{
+    position: fixed;
+    font-size: 15px;
+    top: 22rem;
+    right: 3rem;
+    width:500px;
+    
+}
+.companies{
+    display: none;
+}
+.companies img.shell{
+    position: fixed;
+    display: inline-block;
+    top: 16rem;
+    right: 11rem;
+    border-radius: 20rem;
+    width:60px;
+    height:60px;
+}
+.companies img.webdev{
+    position: fixed;
+    display: inline-block;
+    top: 16rem;
+    right: 2rem;
+    border-radius: 20rem;
+}
+.companies img.friend{
+    position: fixed;
+    display: inline-block;
+    top: 16rem;
+    right: 18rem;
+    width: 80px;
+    height: 70px;
+}
+.companies h4{
+    position: fixed;
+    top: 12.5rem;
+    right: 7em;
+    text-decoration: underline;
+}
+@media (max-width:1024px){
+    .home-content h1{
+        position: absolute;
+        top: 10rem;
+        left: 14rem;
+        font-size: 60px;
+    }
+    .home-content p{
+        position: absolute;
+        left: 15rem;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .home-content .btn{
+        position: absolute;
+        top: 28rem;
+        right: 35rem;
+    }
+}
+
+@media (max-width:780px){
+    .home-content h1{
+        
+        position: absolute;
+        top: 3rem;
+        left: 5rem;
+    }
+    .home-content p{
+        position: absolute;
+        top: 10rem;
+    }
+    .home-content .btn{
+        position: absolute;
+        top: 25rem;
+    }
+}
+@media (max-width:426px){
+    .home-content h1{
+        position: absolute;
+        width:600px;
+        left: 0;
+        top: 6rem;
+    }
+    .home-content p{
+        position: absolute;
+        top: 16rem;
+        width: 500px;
+        left: 2rem;
+    }
+    .home-content .btn{
+        position: absolute;
+        top: 28rem;
+        left: 15rem;
+        width: 200px;
+    }
+}
+
+
+    

@@ -1,0 +1,671 @@
+section .our-teams{
+    height: 1000px;
+}
+p{
+    text-align: justify;
+}
+.about text{
+    color: black;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    position: absolute;
+    right: 4rem;
+    top: 20rem;
+    width: 500px;
+    background:rgba(216, 8, 8, 0.1);
+    margin: 2px 4px;
+    padding: 2px 4px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content{
+    background:white;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation: popUp 2s forwards;
+    
+}
+.about-stuff h1{
+    position: absolute;
+    top: 3rem;
+    left:13rem;
+}
+.about-stuff h2{
+    position: absolute;
+    top: rem;
+    left: 2rem;
+    color: black;
+    width: 600px;
+    line-height: 1em;
+}
+section{
+    height: 100vh;
+}
+
+
+.about p{
+    color: black;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    font-size: 20px;
+    width: 700px;
+    animation: popUp 3s forwards;
+    
+}
+
+.about img.team{
+    position: absolute;
+    top: 15rem;
+    left: 3rem;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(223, 5, 5, 0.2);
+    animation: popUp 3s forwards;
+    
+}
+/*.about img.team:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(400deg);
+}*/
+
+.goal{
+    opacity: 1;
+    
+    transition: opacity 0.5s, transform 0.5s;
+    background:rgba(216, 8, 8, 0.1);
+}
+.goal.visible{
+    opacity: 1;
+    transform: scale(1);
+}
+.goal .board{
+    position: absolute;
+    right: 4rem;
+    top: 53rem;
+    transition: transform 0.1s ease-out;
+    border-radius: 30px;
+}
+.goal img.shake{
+    position: absolute;
+    top: 70rem;
+}
+.goal .board.visible{
+    opacity: 1;
+    transform: scale(1);
+}
+.goal h3{
+    color: black;
+    position: absolute;
+    left: 2rem;
+    top: 53rem;
+    font-size: 50px;
+}
+.goal text{
+    color: black;
+    font-weight: 500;
+    position: absolute;
+    left: 10em;
+    width: 400px;
+    font-size: 30px;
+
+}
+.goal h5{
+    color: black;
+    position: absolute;
+    width: 600px;
+    right: 2rem;
+    font-size: 20px;
+    top: 75rem;
+}
+.goal .shake{
+    width: 300px;
+    position: absolute;
+    top:57rem;
+    left:3rem;
+    border-radius: 200px;
+}
+.core-values .core-content{
+    margin: 3rem ;
+    border-radius: 10px;
+    height: auto;
+    width: 500px;
+    padding: 15px 10px;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.core-values .value-list{
+    padding:  4px 2px;
+    line-height: 2rem;
+}
+.core-values .value-list li{
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    
+}
+.core-content .values{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+.core-content p{
+    font-size: 17px;
+    font-weight: 400;
+}
+.core-content .Work{
+    position: absolute;
+    right: 2rem;
+    top: 85rem;
+    width: 370px;
+    height: auto;
+    border-radius: 60% 81% 77% 88% / 55% 83% 92% 100% ;
+}
+.core-content .Work:hover .overlay{
+    bottom: 0;
+    height: 100%;
+    border-radius: 60% 81% 77% 88% / 55% 83% 92% 100% ;
+}
+/*.core-values .core-content:hover .overlay{
+    bottom: 0;
+    height: 100%;
+    border-radius: 60% 81% 77% 88% / 55% 83% 92% 100% ;
+
+}*/
+.core-content .overlay{
+    position: fixed;
+    background: purple;
+    width: 100%;
+    bottom: 100%;
+    height: 0;
+    
+    right: 0;
+    overflow: hidden;
+    opacity:1;
+    transition: 1.5s ease;
+}
+.core-content .overlay .info{
+    white-space: nowrap; 
+    position: absolute;
+    font-size: 100px;
+    right: 3rem;
+    color:blue;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/*---Now viewing cards container----*/
+.card-container img{
+    border-radius: 30px;
+}
+.card-container .marketing h6{
+    color: black;
+    position: absolute;
+    top: 134rem;
+    right: 6rem;
+    font-size: 20px;
+    z-index: 1;
+}
+.card-container .managing h6{
+    color: black;
+    position: absolute;
+    top: 134rem;
+    right: 33rem;
+    font-size: 20px;
+    z-index: 1;
+}
+.card-container .webteam h6{
+    color: black;
+    position: absolute;
+    top: 134rem;
+    left: 2rem;
+    font-size: 20px;
+    z-index: 1;
+}
+.card-container .branding h6{
+    color: black;
+    position: absolute;
+    top: 157rem;
+    right: 6rem;
+    font-size: 20px;
+    z-index: 1;
+}
+.card-container .influence h6{
+    color: black;
+    position: absolute;
+    top: 157rem;
+    right: 30rem;
+    font-size: 20px;
+    z-index: 1;
+}
+.card-container .content-prime h6{
+    color: black;
+    position: absolute;
+    top: 157rem;
+    left: 2rem;
+    font-size: 20px;
+    z-index: 1;
+}
+
+
+.card-container img.web-team{
+    position: absolute;
+    top: 120rem;
+    left: 2rem;
+    width: 350px;
+    height: 250px;
+}
+
+.card-container img.manage{
+    position: absolute;
+    top: 120rem;
+    left: 31rem;
+    width: 350px;
+    height: 250px;
+}
+.card-container img.mkt{
+    width: 350px;
+    right: 2rem;
+    height: 80px;
+    position: absolute;
+    top: 120rem;
+    height: 250px;
+}
+.card-container img.brand-team{
+    width: 350px;
+    right: 2rem;
+    height: 80px;
+    position: absolute;
+    top: 143rem;
+    height: 250px;
+}
+.card-container img.influence-team{
+    width: 350px;
+    right: 30rem;
+    height: 80px;
+    position: absolute;
+    top: 143rem;
+    height: 250px;
+}
+.card-container img.content-team{
+    width: 350px;
+    left: 3rem;
+    height: 80px;
+    position: absolute;
+    top: 143rem;
+    height: 250px;
+}
+.footer{
+    background: black;
+    width: 100%;
+    position: absolute;
+    top: 200rem;
+}
+@keyframes popUp {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media (max-width:1024px){
+    .about p{
+        position: absolute;
+        left: 10rem;
+    }
+    .about img.team{
+        position: absolute;
+        top: 15rem;
+        left: 18rem;
+        width: 400px;
+        height: 300px;
+    }
+    .about text{
+        position: absolute;
+        top: 35rem;
+        left: 6rem;
+        width: 800px;
+    }
+    .goal .board{
+        position: absolute;
+        top: 50rem;
+        width: 400px;
+        height: 200px;
+    }
+    .goal text{
+        font-size: 18px;
+        
+    }
+    .goal h3{
+        font-size: 25px;
+        position: absolute;
+        top: 49rem;
+    }
+    .card-container h6{
+        width: 400px;
+    }
+    section .our-teams{
+        height: 900px;
+    }
+    .team-card{
+        display: block;
+    }
+    .webteam{
+        position: absolute;
+        display: flex;
+        top: 13rem;
+        width: 300px;
+        left: 6rem;
+    }
+    .managing{
+        position: absolute;
+        top: 13rem;
+        left: 7rem;
+        
+    }
+    .managing h6{
+        position: absolute;
+        top: 15rem;
+        left: 29rem;
+    }
+    .marketing{
+        position: absolute;
+        top: 20rem;
+        right: 2rem;
+    }
+    .branding{
+        position: absolute;
+        top:30rem;
+        right: 15rem;
+    }
+    .influence{
+        position: absolute;
+        top: 10rem;
+        right:15rem;
+    }
+    .content-prime{
+        position: absolute;
+        left: 5rem;
+        top: 30rem;
+    }
+    .marketing{
+        position: absolute;
+        top: 33rem;
+        right: 14rem;
+    }
+    
+}
+
+@media(max-width:768px){
+    .about img.team{
+        position: absolute;
+        width: 400px;
+        height: 250px;
+        left: 2rem;
+    }
+    .about text{
+        position: absolute;
+        top: 15rem;
+        width: 350px;
+        left: 30rem;
+    }
+    .goal img.board{
+        position: absolute;
+        top: 39rem;
+        width: 300px;
+        border-radius: 15px;
+    }
+    .goal img.shake{
+        position: absolute;
+        top: 45rem;
+        width: 200px;
+        left: 6rem;
+    }
+    .goal h3{
+        position: absolute;
+        top:39rem;
+
+    }
+    .goal h5{
+        position: absolute;
+        top: 50rem;
+        left: 20rem;
+    }
+    .core-values .core-content{
+        position: absolute;
+        top: 67rem;
+        width: 350px;
+        height: 400px;
+    }
+    .core-values img.Work{
+        position: absolute;
+        top: 0rem;
+        left: 30rem;
+    }
+    .card-container .marketing{
+        position: absolute;
+        top: -16rem;
+        right:30rem;
+    }
+    .card-container .managing{
+        position: absolute;
+        top: -16rem;
+        left:3rem;
+    }
+    .card-container .webteam{
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    .card-container .branding{
+        position: absolute;
+        top: -19rem;
+        right: 2rem;
+    }
+    .card-container .influence{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .card-container .content-prime{
+        position: absolute;
+        top: 1rem;
+        left: 31rem;
+    }
+}
+@media (max-width:426px){
+    .about h1{
+        
+        position: absolute;
+        left: 12rem;
+        text-decoration: underline;
+    }
+    .about p{
+        
+        position: absolute;
+        left: 2rem;
+        width: 500px;
+    }
+    .about img.team{
+        position: absolute;
+        top: 18rem;
+        width: 250px;
+        height: 200px;
+    }
+    .about text{
+        position: absolute;
+        top: 18rem;
+        font-size: 13px;
+        width: 180px;
+        left: 23rem;
+    }
+    .goal img.board{
+        position: absolute;
+        top: 35rem;
+        width: 230px;
+        height: 150px;
+        right: 1rem;
+    }
+    .goal h3{
+        
+        position: absolute;
+        top: 34rem;
+    }
+    .goal text{
+        
+        position: absolute;
+        left: 10px;
+        text-align: justify;
+        width: 50%;
+    }
+    .goal img.shake{
+        position: absolute;
+        top: 45rem;
+        width: 150px;
+        left: 4rem;
+    }
+    .goal h5{
+        
+        position: absolute;
+        top: 44rem;
+        font-size: 14px;
+        left: 18rem;
+        text-align: justify;
+        width: 300px;
+    }
+    .core-values .core-content{
+        position: absolute;
+        height: 400px;
+        width: 250px;
+        top: 64rem;
+    }
+    .core-content .value-list{
+        position: absolute;
+        top: 14rem;
+        line-height:20px;
+        width: 200px;
+        
+    }
+    .core-content img.Work{
+        position: absolute;
+        width: 250px;
+        left: 18rem;
+    }
+    .card-container .marketing{
+        position: absolute;
+        top: -20rem;
+        right: 16rem;
+    }
+    .card-container .marketing img{
+        width: 300px;
+    }
+    .card-container .marketing h6{
+        position: absolute;
+        right: 0rem;
+    }
+    .card-container .managing{
+        position: absolute;
+        top: -20rem;
+        left: -9rem;
+    }
+    .card-container .managing img{
+        width: 250px;
+    }
+    .card-container .webteam{
+        position: absolute;
+        top: 0rem;
+        left: -1rem;
+    }
+    .card-container .webteam img{
+        width: 300px;
+    }
+    .card-container .webteam h6{
+        font-size: 18px;
+        left: 0;
+    }
+    .card-container .branding {
+        position: absolute;
+        top:-23rem;
+        right: -5rem;
+    }
+    .card-container .branding img{
+        width: 300px;
+    }
+    .card-container .branding h6{
+        right: -0rem;
+    }
+    .card-container .influence{
+        position: absolute;
+        top: -3rem;
+        right: -12rem;
+    }
+    .card-container .influence img{
+        width: 300px;
+    }
+    .card-container .content-prime{
+        position: absolute;
+        top: -3rem;
+        left: 19rem;
+    }
+    .card-container .content-prime img{
+        width: 300px;
+    }
+    .card-container .content-prime h6{
+        position: absolute;
+        left: 4rem;
+        font-size: 18px;
+        width: 240px;
+    }
+}
+@media (max-width:1440px) {
+    .goal img.board{
+        position: absolute;
+        top: 55rem;
+        border-radius: 20px;
+    }
+    .goal text{
+        color: red;
+    }
+    .goal img.shake{
+        position:absolute;
+        top: 75rem;
+    }
+    .goal h3{
+        color: red;
+        position:absolute;
+        top: 55rem;
+    }
+    .goal h5{
+        color: red;
+        position: absolute;
+        top: 72rem;
+    }
+    
+}
